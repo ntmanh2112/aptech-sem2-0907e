@@ -1,0 +1,5 @@
+C:\Users\ThienVD\Documents\Visual Studio 2008\Projects\DemoCSharp\DemoCSharp\bin\Debug\DemoCSharp.exe
+C:\Users\ThienVD\Documents\Visual Studio 2008\Projects\DemoCSharp\DemoCSharp\bin\Debug\DemoCSharp.pdb
+C:\Users\ThienVD\Documents\Visual Studio 2008\Projects\DemoCSharp\DemoCSharp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ThienVD\Documents\Visual Studio 2008\Projects\DemoCSharp\DemoCSharp\obj\Debug\DemoCSharp.exe
+C:\Users\ThienVD\Documents\Visual Studio 2008\Projects\DemoCSharp\DemoCSharp\obj\Debug\DemoCSharp.pdb
