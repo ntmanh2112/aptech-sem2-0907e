@@ -18,14 +18,12 @@ public class TinhTienDien {
             thanhTien = luongDien * gia1;
             System.out.println("So tien ban phai tra la :" + thanhTien);
         }
-        else
-        if (luongDien <= 150)
+        else if (luongDien <= 150)
         {
            thanhTien = ((luongDien - 100)*gia2+100*gia1);
            System.out.println("So tien ban phai tra la :" + thanhTien);
         }
-        else
-        if (luongDien > 150)
+        else if (luongDien > 150)
         {
             thanhTien = ((luongDien - 150)*gia3+50*gia2+100*gia3);
             System.out.println("So tien ban phai tra la :" + thanhTien);
