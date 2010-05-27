@@ -7,22 +7,31 @@ public class RunNewThread{
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		NewThread mythread1= new NewThread("First");
-		NewThread mythread2= new NewThread("Second");
-		NewThread mythread3= new NewThread("Third");
-		mythread1.setPriority(8);
-		mythread2.setPriority(5);
-		mythread3.setPriority(2);
-		mythread1.start();
-		mythread2.start();
-		mythread3.start();
+		NewThread mythread1= new NewThread();
+		NewThread mythread2= new NewThread();
+		NewThread mythread3= new NewThread();
+		Thread myThread1 = new Thread(mythread1);
+		Thread myThread2 = new Thread(mythread2);
+		Thread myThread3 = new Thread(mythread3);
+		myThread1.setName("First");
+		myThread2.setName("Second");
+		myThread3.setName("Third");
+//		myThread1.setPriority(6);
+//		myThread2.setPriority(5);
+//		myThread3.setPriority(4);
+		myThread1.start();
+		myThread2.start();
+		myThread3.start();
 				
-		 try {
-	            Thread.sleep(6000);
-	        } catch (Exception ex) { }
-	    if(Thread.activeCount()==1)   
+//		 try {
+//	            Thread.sleep(6000);
+//	        } catch (Exception ex) { }
+	    while(Thread.activeCount() >= 1) {
+		if(Thread.activeCount()==1) {  
 		System.out.println("Main thread exiting.");
-		
+		break;
+		}
+	    }
 	}
 
 }
