@@ -7,8 +7,8 @@ public class AccountManager {
 	 */
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		CustomerAccount srcAcc= new CustomerAccount("loc",90000.0);
-		CustomerAccount desAcc= new CustomerAccount("linh",50000.0);
+		CustomerAccount srcAcc= new CustomerAccount("loc",90000);
+		CustomerAccount desAcc= new CustomerAccount("linh",50000);
 			
 		System.out.println("the balance of " + srcAcc.getAccountType() + " is: " + srcAcc.getBalance());
 		System.out.println("the balance of " + desAcc.getAccountType() + " is: " + desAcc.getBalance());
