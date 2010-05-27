@@ -1,4 +1,4 @@
-package assig1;
+package ass1;
 import java.util.*;
 public class CustomerAccount {
 	private  String accountType="";

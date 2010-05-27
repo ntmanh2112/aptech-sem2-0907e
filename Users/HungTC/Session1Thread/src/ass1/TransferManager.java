@@ -1,4 +1,4 @@
-package assig1;
+package ass1;
 
 import java.util.Scanner;
 
@@ -36,7 +36,7 @@ public class TransferManager implements Runnable{
 		desAcc.setBalance(desAcc.getBalance() + transferMoney);
 		System.out.println("Would you like to transfer again?\n1.yes\n2.no");
 		yesNo = input.nextInt();
-		if(yesNo > 1 || yesNo < 0) {
+		if(yesNo > 2 || yesNo < 1) {
 			System.out.println("Bad choice!");
 			yesNo=0;
 		}

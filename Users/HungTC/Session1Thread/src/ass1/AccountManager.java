@@ -1,4 +1,4 @@
-package assig1;
+package ass1;
 
 public class AccountManager {
 
