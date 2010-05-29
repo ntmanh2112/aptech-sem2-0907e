@@ -1,4 +1,4 @@
-package MyMath;
+package mymath;
 
 public class LamTronSoThapPhan {
 
