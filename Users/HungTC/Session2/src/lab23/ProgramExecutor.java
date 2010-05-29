@@ -1,10 +1,7 @@
 package lab23;
 
 import java.io.IOException;
-import java.text.BreakIterator;
 import java.util.Scanner;
-
-import com.sun.org.apache.bcel.internal.generic.INVOKEVIRTUAL;
 
 public class ProgramExecutor {
 	
@@ -15,7 +12,8 @@ public class ProgramExecutor {
 	public static void main(String[] args) throws IOException {
 		Runtime rt = Runtime.getRuntime(); 
 		 
-        Process proc; 
+        @SuppressWarnings("unused")
+		Process proc; 
         int choice;
         System.out.println("RUN MY FAVOURITE PROGRAMS\n1.Notepad \n2.Paint \n3.Microsoft Word \n4.Microsoft Excel \n5.Calculator \n6.Internet Explorer \n7.Windows Explorer \n8.Exit \nRun: ");
         Scanner input = new Scanner(System.in);
@@ -31,11 +29,13 @@ public class ProgramExecutor {
             break;
         case 3:
         	System.getProperty("os.name").startsWith("Windows"); 
-            proc = rt.exec("C:\Program Files\Microsoft Office\OFFICE11\Winword.exe winword");
+            proc = rt.exec("C:\\Program Files\\Microsoft Office\\OFFICE11\\WINWORD.EXE");
+//            winword
             break;
         case 4:
         	System.getProperty("os.name").startsWith("Windows"); 
-            proc = rt.exec("excel");
+            proc = rt.exec("C:\\Program Files\\Microsoft Office\\OFFICE11\\EXCEL.EXE");
+            //excel
             break;
         case 5:
         	System.getProperty("os.name").startsWith("Windows"); 
