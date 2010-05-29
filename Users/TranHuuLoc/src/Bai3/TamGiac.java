@@ -1,17 +1,7 @@
-/**
- * 
- */
-package tamgiac;
+package Bai3;
 
-/**
- * @author ThienVD
- *
- */
 public class TamGiac {
 
-	/*
-	 * Khai bao thuoc tinh
-	 */
 	public Diem diemA;
 	public Diem diemB;
 	public Diem diemC;
@@ -20,18 +10,14 @@ public class TamGiac {
 	public double canhBC;
 	public double canhAC;
 	
-	/*
-	 * Khai bao ham khoi tao
-	 */
+	
 	public TamGiac() {
 		this.diemA = new Diem("A");
 		this.diemB = new Diem("B");
-		this.diemC = new Diem("c");
+		this.diemC = new Diem("C");
 	}
 	
-	/*
-	 * Hanh dong
-	 */
+	
 	public void nhapDiem() {
 		this.diemA.nhapToaDo();
 		this.diemB.nhapToaDo();
@@ -45,22 +31,37 @@ public class TamGiac {
 	}
 	
 	public double tinhChuVi() {
-		double cv = 0.0;
+		double cv;
 		
 		this.tinhCanh();
 		
 		cv = this.canhAB + this.canhAC + this.canhBC;
-		
+		cv=lamtron(cv,2);
 		return cv;
 	}
 	
 	public double tinhDienTich() {
-		double dt = 0.0;
+		double dt;
 		double p = this.tinhChuVi()/2;
 		this.tinhCanh();
 		
-		dt = Math.sqrt(p * (p - this.canhBC) * (p - this.canhAC) * p - this.canhAB);
+		dt = Math.sqrt(Math.abs(p * (p - this.canhBC) * (p - this.canhAC) * p - this.canhAB));
+		dt=lamtron(dt,2);return dt;
 		
-		return dt;
-	}
+		}
+public static double lamtron(double number, int digit) {
+		
+		if (digit>0) {
+			int temp = 1, i;
+			for (i = 0; i < digit; i++)
+			temp = temp*10;
+			number = number*temp;
+			number = Math.round(number);
+			number = number/temp;
+			return number;
+		}
+		
+		else	
+		return number;
+		}
 }
