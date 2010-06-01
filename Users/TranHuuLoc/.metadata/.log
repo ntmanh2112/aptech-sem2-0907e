@@ -1,11 +1,14 @@
-!SESSION 2010-05-29 18:21:24.828 -----------------------------------------------
+!SESSION 2010-05-31 12:52:43.125 -----------------------------------------------
 eclipse.buildId=M20080911-1700
 java.version=1.6.0_13
 java.vendor=Sun Microsystems Inc.
 BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86 -data E:\Java\aptech-sem2-0907e\Users\TranHuuLoc
+Command-line arguments:  -os win32 -ws win32 -arch x86
 
-!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-29 18:22:46.343
+This is a continuation of log file E:\Java\aptech-sem2-0907e\Users\TranHuuLoc\.metadata\.bak_0.log
+Created Time: 2010-05-31 18:34:10.656
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:34:10.656
 !MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
 svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
 to get a newer Subversion client, or to downgrade this working copy.
@@ -24,19 +27,28 @@ for details.
 	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
 	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
 	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
 	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
 	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
 	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
 	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
-	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:141)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
 	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
 	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
 	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
 	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
 	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:136)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
 svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
@@ -46,4 +58,2353 @@ for details.
 
 	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
 	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
-	... 18 more
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:34:30.781
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 18:35:41.015
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for System [in System.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:971)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:971)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 18:35:41.015
+!MESSAGE Cannot retrieve the attached javadoc for System [in System.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:971)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 18:35:42.468
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for System [in System.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Unexpected end of file from server
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:118)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:118)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 18:35:42.468
+!MESSAGE Cannot retrieve the attached javadoc for System [in System.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Unexpected end of file from server
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:118)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 18:35:44.046
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for PrintStream [in PrintStream.class [in java.io [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 18:35:44.046
+!MESSAGE Cannot retrieve the attached javadoc for PrintStream [in PrintStream.class [in java.io [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:36:11.312
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 18:37:34.328
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for System {key=Ljava/lang/System;} [in System.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Unexpected end of file from server
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:971)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:552)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:509)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:494)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:82)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:971)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:552)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:509)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:494)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:82)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 18:37:34.343
+!MESSAGE Cannot retrieve the attached javadoc for System {key=Ljava/lang/System;} [in System.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Unexpected end of file from server
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:971)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:552)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:509)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:494)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:82)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:41:52.359
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:43:15.703
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:44:57.187
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:51:08.171
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:52:17.171
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 18:53:49.390
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Object [in Object.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 18:53:49.390
+!MESSAGE Cannot retrieve the attached javadoc for Object [in Object.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:54:13.890
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:55:39.671
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:57:29.968
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 18:58:55.812
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 18:59:45.781
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for System [in System.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:971)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:971)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 18:59:45.781
+!MESSAGE Cannot retrieve the attached javadoc for System [in System.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:971)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 18:59:48.312
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for System [in System.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:118)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:118)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 18:59:48.312
+!MESSAGE Cannot retrieve the attached javadoc for System [in System.class [in java.lang [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:118)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 18:59:50.218
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for PrintStream [in PrintStream.class [in java.io [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 18:59:50.218
+!MESSAGE Cannot retrieve the attached javadoc for PrintStream [in PrintStream.class [in java.io [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 18:59:50.281
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for PrintStream [in PrintStream.class [in java.io [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 18:59:50.281
+!MESSAGE Cannot retrieve the attached javadoc for PrintStream [in PrintStream.class [in java.io [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 19:06:05.609
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 19:08:22.031
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 19:12:56.671
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 19:13:25.656
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:13:52.390
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Unexpected end of file from server
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:552)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:509)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:494)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:82)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:552)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:509)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:494)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:82)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:13:52.390
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Unexpected end of file from server
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:552)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:509)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:494)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:82)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:13:52.796
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:13:52.796
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:13:57.484
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:13:57.484
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:16.125
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:16.125
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:18.984
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:18.984
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:20.671
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:20.671
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:20.875
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:20.890
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:21.062
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:21.062
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:27.484
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:27.484
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:28.750
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:28.750
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:28.953
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:28.953
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:30.000
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:30.000
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:30.218
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:30.218
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:30.515
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:30.515
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:32.203
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:32.203
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:32.421
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:32.421
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:32.625
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:32.625
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2010-05-31 19:14:32.828
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:796)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1008 2010-05-31 19:14:32.828
+!MESSAGE Cannot retrieve the attached javadoc for Scanner [in Scanner.class [in java.util [in C:\Program Files\Java\jre6\lib\rt.jar]]]java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:751)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1059)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:558)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:98)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:510)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 19:14:43.546
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2010-05-31 19:15:20.484
+!MESSAGE org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:494)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:466)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:459)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:62)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.RecursiveStatusUpdateStrategy.statusesToUpdate(RecursiveStatusUpdateStrategy.java:46)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.basicGetStatus(StatusCacheManager.java:217)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:188)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.getStatus(StatusCacheManager.java:136)
+	at org.tigris.subversion.subclipse.core.resources.LocalResource.getStatus(LocalResource.java:208)
+	at org.tigris.subversion.subclipse.core.resources.LocalFolder.getStatus(LocalFolder.java:288)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.processResources(RevertResourceManager.java:151)
+	at org.tigris.subversion.subclipse.core.resourcesListeners.RevertResourceManager.resourceChanged(RevertResourceManager.java:112)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:288)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:282)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:297)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:245)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:513)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:94)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:391)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:117)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:732)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:614)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:880)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1083)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: Unsupported working copy format
+svn: This client is too old to work with working copy 'E:\Java\aptech-sem2-0907e\Users\TranHuuLoc'.  You need
+to get a newer Subversion client, or to downgrade this working copy.
+See http://subversion.tigris.org/faq.html#working-copy-format-change
+for details.
+
+	at org.tigris.subversion.javahl.SVNClient.status(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.getStatus(AbstractJhlClientAdapter.java:480)
+	... 27 more
