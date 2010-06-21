@@ -124,4 +124,7 @@ public class View6 extends JFrame {
 		txt.setLocation(x, y + 15);
 		c.add(txt);
 	}
+	public static void main(String[] str){
+		new View6();
+	}
 }

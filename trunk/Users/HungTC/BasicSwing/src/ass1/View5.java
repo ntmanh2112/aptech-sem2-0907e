@@ -144,5 +144,7 @@ public class View5 extends JFrame {
 		lb.setSize(100, 50);
 		c.add(lb);
 	}
-
+	public static void main(String[] str){
+		new View5();
+	}
 }

@@ -76,5 +76,7 @@ public class View3 extends JFrame {
 		// bt.setIcon(ico);
 		c.add(bt);
 	}
-
+	public static void main(String[] str){
+		new View3();
+	}
 }

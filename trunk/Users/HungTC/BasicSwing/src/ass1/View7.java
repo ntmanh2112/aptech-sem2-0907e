@@ -88,7 +88,9 @@ public class View7 extends JFrame {
 	}
 	
 	
-	
+	public static void main(String[] str){
+		new View7();
+	}
 	
 	
 	
