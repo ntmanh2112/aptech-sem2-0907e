@@ -88,5 +88,7 @@ public void button(String name, int x, int y, int size) {
 	// bt.setIcon(ico);
 	c.add(bt);
 }
-
+public static void main(String[] str){
+	new View2();
+}
 }

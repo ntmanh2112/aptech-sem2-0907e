@@ -1,7 +1,6 @@
-package ass1;
+package demoBorderLayout;
 
 import java.awt.BorderLayout;
-import java.awt.CheckboxGroup;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -18,33 +17,29 @@ import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-
-public class View1 extends JFrame {
+public class LoginBoderLayout extends JFrame {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
-
-	CheckboxGroup group = new CheckboxGroup();
-	Imagebackground image;
+	Container c = this.getContentPane();
 	GridBagConstraints constraints = new GridBagConstraints();
 
-	BufferedImage img = ImageIO.read(new File("logo.png"));
+	BufferedImage img = ImageIO.read(new File("wellcome.jpg"));
 
-	Container c = this.getContentPane();
+	ImagePanel image;
 
-	public View1() throws IOException {
+	public LoginBoderLayout() throws IOException {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		init();
 	}
 
-	private void init() throws IOException {
+	public void init() throws IOException {
+
 		this.setLayout(new BorderLayout());
 		this.setSize(500, 500);
 
-		image = new Imagebackground(img, this.getSize().width,
-				this.getSize().height);
+		image = new ImagePanel(img, this.getSize().width, this.getSize().height);
 		image.setLayout(new GridBagLayout());
 		// label
 		JLabel lb = new JLabel();
@@ -76,12 +71,11 @@ public class View1 extends JFrame {
 	}
 
 	public void checkbox(String name, int x, int y, int size) {
-		JCheckBox chk = new JCheckBox(name,false);
-		
+		JCheckBox chk = new JCheckBox();
 		constraints.gridx = x;
 		constraints.gridy = y;
 		chk.setPreferredSize(new Dimension(size, 20));
-		
+		chk.setText(name);
 		constraints.insets = new Insets(10, 50, 5, 2);
 		image.add(chk, constraints);
 		constraints.insets = new Insets(0, 0, 0, 0);
@@ -100,6 +94,6 @@ public class View1 extends JFrame {
 	}
 
 	public static void main(String[] str) throws IOException {
-		new View1();
+		new LoginBoderLayout();
 	}
 }

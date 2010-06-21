@@ -109,4 +109,7 @@ public class View4 extends JFrame {
 		txt.setLocation(x, y + 15);
 		contain.add(txt);
 	}
+	public static void main(String[] str){
+		new View4();
+	}
 }
