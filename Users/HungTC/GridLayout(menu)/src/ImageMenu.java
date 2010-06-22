@@ -4,6 +4,8 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 
 public class ImageMenu extends JPanel {
 	/**
@@ -19,7 +21,8 @@ public class ImageMenu extends JPanel {
 	Icon ico4;
 	Icon ico5;
 	Icon ico6;
-
+	
+	
 	public ImageMenu() {
 		ico1 = new ImageIcon("add.png");
 		ico2 = new ImageIcon("edit.png");
@@ -46,5 +49,8 @@ public class ImageMenu extends JPanel {
 		this.add(bt6);
 
 	}
+	
+	
+	
 
 }
