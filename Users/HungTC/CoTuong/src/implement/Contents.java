@@ -100,6 +100,18 @@ public class Contents extends JPanel {
 
 	// *********(-ADD CHESSES-)********
 	public void chess(Graphics2D gr) throws IOException {
+		// danh so
+		Font font = new Font("Time New Roman", Font.BOLD, 20);
+		gr.setFont(font);
+		for (int i = 1; i <= 10; i++) {
+			gr.setColor(Color.red);
+			gr.drawString((11 - i) + " ", 50, 5 + (i * 50));
+		}
+		for (int i = 1; i <= 9; i++) {
+			gr.setColor(Color.blue);
+			gr.drawString(i + " ", (i * 50) + 45, 550);
+		}
+
 		// thuong
 		BufferedImage King1 = ImageIO.read(new File("China/King1.gif"));
 		gr.drawImage(King1, 275, 25, 50, 50, null);
