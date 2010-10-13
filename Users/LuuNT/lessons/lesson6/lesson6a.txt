@@ -1,0 +1,27 @@
+#question0: what do you want?
+#answer = login0:
+	#check: do you already have login?
+	#answer = yes:
+		#show a link to logout
+	#answer = no:
+		#initiate values
+		#question1: what are your login_email and login_password?
+		#answer = login1:
+			#check: are login_email and login_password valid?
+			#answer = 1 no:
+				#goto: question1
+			#answer = yes:
+				#select1: select * from Login1 using login_email
+				#answer = no record:
+					#set invalid message to login_email and login_password do not match
+					#goto: question1
+				#answer = yes record:
+					#check: does given password match the record
+					#answer = no
+						#increase login_wrongs
+						#set invalid message to login_email and login_password do not match
+						#goto: question1
+					#answer = yes
+						#get a new cookie_key
+						#set cookie_key to cookie
+						#create a new session

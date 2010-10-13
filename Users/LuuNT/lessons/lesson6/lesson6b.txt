@@ -1,0 +1,34 @@
+#question0: what do you want?
+#answer = register0:
+	#check: do you already have login?
+	#answer = yes:
+		#show a link to logout
+	#answer = no:
+		#initiate values
+		#question1: what are your login_email, login_password, retype_password, login_username?
+		#answer = register1:
+			#check: are the login_email, login_password, retype_password, login_username valid?
+			#answer = 1 no:
+				#goto: question1
+			#answer = yes:
+				#check: does login_email already exist?
+				#answer = yes:
+					#set valid = false
+					#change invalid message
+					#goto: question1
+				#answer = no:
+					#check: does login_username already exist?
+					#answer = yes:
+						#set valid = false
+						#change invalid message
+						#goto: question1
+					#answer = no:
+						#set login_kind = empty
+						#set login_until = now + 3 months
+						#get a new cookie_key
+						#set cookie_key to cookie
+						# get a new login_id
+						#create a new Login1
+						#create a new Login0
+						#set this session
+						#winfo: register successful
