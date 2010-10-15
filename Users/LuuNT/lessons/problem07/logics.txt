@@ -1,0 +1,81 @@
+
+#question = what do you want?
+#answer = insert_diary
+	#check prompt_login
+	#result = True
+		#call form_insert_diary
+			#ask for diary_text
+
+#question = what do you want?
+#answer = form_insert_diary
+	#check prompt_login
+	#result = True
+		#call do_form_insert_diary
+			#check get_input(diary_text)
+			#result = False
+				#call form_insert_diary
+			#result = True
+				#insert a diary
+				#redirect select_diary
+
+#question = what do you want?
+#answer = select_diary
+	#check prompt_login
+	#result = True
+		#call do_select_diary
+			#display diary records using login_id
+
+#question = what do you want?
+#answer = update_diary
+	#check prompt_login
+	#result = True
+		#call form_update_diary(diary_id, diary_text)
+			#check get_input(diary_text)
+			#result = False
+				#do nothing
+			#result = True
+				#show form
+
+#question = what do you want?
+#answer = form_update_diary(diary_id, diary_text)
+	#check prompt_login
+	#result = True
+		#call do_form_update_diary
+			#check get_input(diary_id)
+			#result = False
+				#do nothing
+			#resut = True
+				#check get_input(diary_text)
+				#result = False
+					#call form_update_diary(diary_id, diary_text)
+				#result = True
+					#get diary record using diary_id
+					#result = False
+						#walert(record not found)
+					#result = True
+						#update diary using diary_id
+						#redirect select_diary
+
+
+#question = what do you want?
+#answer = delete_diary
+	#check prompt_login
+	#result = True
+		#call confirm_delete_diary
+
+#question = what do you want?
+#answer = confirm_delete_diary
+	#check prompt_login
+	#result = True
+		#call do_confirm_delete_diary
+			#check confirm
+			#result = False
+				#redirect select_diary
+			#result = True
+				#check get_input(diary_id)
+				#result = False
+					#walert(record not found)
+				#result = True
+					#delete diary using diary_id
+					#redirect select_diary
+
