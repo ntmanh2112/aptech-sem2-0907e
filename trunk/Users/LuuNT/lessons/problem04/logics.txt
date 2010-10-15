@@ -1,0 +1,73 @@
+
+#question = what do you want?
+#answer = insert_thank
+	#check prompt_login
+	#result = True
+		#call form_insert_thank
+			#check exist thank in day
+				#result = True
+					# call form_update_thank
+				#result = False
+					#ask for thank_text				
+			
+
+#question = what do you want?
+#answer = do_form_insert_thank
+	#check prompt_login
+	#result = True
+		
+		#call do_form_insert_thank
+			# check exist thank in day
+			# result : True
+				# call form_update_thank
+			# result : False
+				#insert a thank
+				#redirect form_select_thank
+			
+
+#question = what do you want?
+#answer = form_update_thank
+	#check prompt_login
+	#result = True	
+		#call do_form_update_thank
+			# check record found
+			#result False
+				# redirect form_select_thank
+			# result True 
+				# display thank records using login_id
+
+#question = what do you want?
+#answer = do_form_update_thank
+	#check prompt_login
+	#result = True
+		#call do_form_update_thank(thank_id,thank_text0,thank_text1,thank_text2,thank_text3,thank_text4)			
+		# check record found
+			#result False
+				# redirect form_select_thank
+			# result True 
+				# display thank records using login_id
+				# call form_select_thank
+
+#question = what do you want?
+#answer = delete_thank
+	#check prompt_login
+	#result = True
+		#call confirm_delete_thank
+
+#question = what do you want?
+#answer = confirm_delete_thank
+	#check prompt_login
+	#result = True
+		#call confirm_delete_thank
+			#check confirm
+			#result = False
+				#redirect form_select_thank
+			#result = True
+				#check get_input(thank_id)
+				#result = False
+					#walert(record not found)
+				#result = True
+					#delete thank using thank_id
+					#redirect form_select_thank
+
+
