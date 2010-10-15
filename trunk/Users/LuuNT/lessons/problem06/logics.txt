@@ -1,0 +1,72 @@
+
+#question = what do you want?
+#answer = insert_piclink
+	#check prompt_login
+	#result = True
+		#call form_insert_piclink()
+			# ask input piclink_url			
+			
+
+#question = what do you want?
+#answer = insert_piclink_values
+	#check prompt_login
+	#result = True		
+		#call do_insert_piclink_values()
+			# check piclink_url
+			# result : False
+				# call insert_piclink_values
+			# result : True
+				#insert piclink_url
+				#show message insert complete.
+				
+
+#question = what do you want?
+#answer = select_piclink
+	#check prompt_login
+	#result = True		
+		#call do_select_piclink() using login_id
+				
+
+			
+
+#question = what do you want?
+#answer = update_piclink
+	#check prompt_login
+	#result = True	
+		#call form_update_piclink()
+			#display piclink_url records using login_id,piclink_id
+
+#question = what do you want?
+#answer = do_update_piclink()
+	#check prompt_login
+	#result = True
+		#call do_update_piclink_values(piclink_id,piclink_url)
+		# check record found
+			#result False
+				# redirect select_piclink
+			# result True 
+				# show meassage update complete.
+
+				
+#question = what do you want?
+#answer = delete_piclink
+	#check prompt_login
+	#result = True
+		#call form_delete_piclink()
+
+#question = what do you want?
+#answer = form_delete_piclink()
+	#check prompt_login
+	#result = True
+		#call do_delete_piclink_yes
+			#check confirm
+			#result = False
+				#redirect select_piclink
+			#result = True
+				#check get_input(piclink_id)
+				#result = False
+					#alert(record not found)
+				#result = True
+					#delete piclink using piclink_id
+					#redirect select_piclink
+
